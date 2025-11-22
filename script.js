@@ -55,7 +55,7 @@ window.addEventListener('keydown', function (dets) {
   let key = dets.key;
   if (typeof dets.key !== 'number') key = dets.key.toUpperCase();
 
-  if (key >= 0 || (key >= 'A' && key < 'Z')) {
+  if (key >= 0 || (key >= 'A' && key <= 'Z')) {
     const aud = pianoAudios[key];
     aud.currentTime = 0;
     aud.play();
